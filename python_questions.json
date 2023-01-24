@@ -1,0 +1,143 @@
+[
+    {
+        "question": "Which of the following is not a basic data type in Python?",
+        "options": [
+            "String",
+            "List",
+            "Tuple",
+            "Car"
+        ],
+        "answer": "Car",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "What does the '%' operator do in Python?",
+        "options": [
+            "Multiplies the left operand by the right operand",
+            "Divides the left operand by the right operand",
+            "Modulus operator, returns the remainder of dividing the left operand by the right operand",
+            "Concatenates the left operand and the right operand"
+        ],
+        "answer": "Modulus operator, returns the remainder of dividing the left operand by the right operand",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "What is the output of the following Python code snippet? \n x = [1, 2, 3, 4]\n y = x[1:3]\n print(y)",
+        "options": [
+            "[2, 3]",
+            "[1, 2, 3]",
+            "[3, 4]",
+            "[1, 2]"
+        ],
+        "answer": "[2, 3]",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which of the following is not a built-in function in Python?",
+        "options": [
+            "print()",
+            "input()",
+            "execute()",
+            "len()"
+        ],
+        "answer": "execute()",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "Which of the following is a way to define a function in Python?",
+        "options": [
+            "def function_name():",
+            "function function_name():",
+            "function_name(){",
+            "create function_name():"
+        ],
+        "answer": "def function_name():",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "Which of the following is a built-in exception in python?",
+        "options": [
+            "MyException",
+            "ValueError",
+            "FileNotFound",
+            "InputError"
+        ],
+        "answer": "ValueError",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "What is the output of the following python code? \n a = [1, 2, 3]\n b = [4, 5, 6]\n print(a + b)",
+        "options": [
+            "[1, 2, 3, 4, 5, 6]",
+            "[5, 7, 9]",
+            "Error",
+            "None"
+        ],
+        "answer": "[1, 2, 3, 4, 5, 6]",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "Which of the following is not a valid keyword in python?",
+        "options": [
+            "try",
+            "except",
+            "finally",
+            "end"
+        ],
+        "answer": "end",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "What is the output of the following Python code snippet?\n def foo(x, y=[]):\n    y.append(x)\n    return y\n \n print(foo(1))\n print(foo(2))\n print(foo(3))",
+        "options": [
+            "[1, 2, 3]",
+            "[1] [2] [3]",
+            "[3, 2, 1]",
+            "Error"
+        ],
+        "answer": "[1, 2, 3]",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "What is the output of the following Python code snippet? \n def outer():\n    x = 1\n    def inner():\n        print(x)\n    inner()\n    x = 2\n    inner()\n outer()",
+        "options": [
+            "1 2",
+            "2 2",
+            "1 1",
+            "Error"
+        ],
+        "answer": "1 2",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which of the following is the correct syntax to inherit a class in Python?",
+        "options": [
+            "class Child(Parent):",
+            "class Child: inherit Parent",
+            "class Child extends Parent:",
+            "class Child : Parent"
+        ],
+        "answer": "class Child(Parent):",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "What is the output of the following Python code snippet?\n x = [1, 2, 3, 4, 5]\n y = x\n y[2] = 0\n print(x)",
+        "options": [
+            "[1, 2, 0, 4, 5]",
+            "[1, 2, 3, 4, 5]",
+            "Error",
+            "None"
+        ],
+        "answer": "[1, 2, 0, 4, 5]",
+        "difficulty": "Hard"
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+            
+]

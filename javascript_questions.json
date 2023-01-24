@@ -1,0 +1,135 @@
+[
+    {
+        "question": "Which of the following is not a valid way to declare a variable in Javascript?",
+        "options": [
+            "var x",
+            "let x",
+            "const x",
+            "create x"
+        ],
+        "answer": "create x",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "What is the output of the following Javascript code? \n let x = [1, 2, 3]; \n let y = x; \n y[1] = 4; \n console.log(x);",
+        "options": [
+            "[1, 2, 3]",
+            "[1, 4, 3]",
+            "Error",
+            "None"
+        ],
+        "answer": "[1, 4, 3]",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Which of the following is not a type of loop in Javascript?",
+        "options": [
+            "for",
+            "while",
+            "do-while",
+            "repeat"
+        ],
+        "answer": "repeat",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "Which of the following is the correct syntax to create a function in Javascript?",
+        "options": [
+            "function myFunction()",
+            "create myFunction()",
+            "myFunction() =>",
+            "let myFunction = ()"
+        ],
+        "answer": "function myFunction()",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "What is the output of the following Javascript code? \n function outer(){\n    let x = 1;\n    function inner(){console.log(x);}\n    inner();\n    x = 2;\n    inner();\n }\n outer();",
+        "options": [
+            "1 2",
+            "2 2",
+            "1 1",
+            "Error"
+        ],
+        "answer": "1 2",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which of the following is the correct syntax to create a class in Javascript?",
+        "options": [
+            "class MyClass",
+            "create MyClass",
+            "function MyClass",
+            "let MyClass = class"
+        ],
+        "answer": "class MyClass",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "What is the output of the following Javascript code? \n let x = 0; \n for(let i = 0; i < 5; i++){ \n   setTimeout(() => {x++; console.log(x)}, i * 1000); \n }",
+        "options": [
+            "1 2 3 4 5",
+            "0 1 2 3 4",
+            "5 5 5 5 5",
+            "0 0 0 0 0"
+        ],
+        "answer": "5 5 5 5 5",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Which of the following is not a way to create an object in Javascript?",
+        "options": [
+            "let obj = new Object()",
+            "let obj = {}",
+            "let obj = Object.create()",
+            "let obj = create Object()"
+        ],
+        "answer": "let obj = create Object()",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "What is the output of the following Javascript code? \n function outer(){ \n    let x = 1; \n    return function(){ \n        console.log(x); \n        x++; \n    } \n } \n let inner = outer(); \n inner(); \n inner();",
+        "options": [
+            "1 2",
+            "2 2",
+            "Error",
+            "Undefined"
+        ],
+        "answer": "1 2",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "What is the value of `this` inside the following callback function? \n let obj = { \n    prop: 'value', \n    method: function(){ \n        setTimeout(function(){console.log(this.prop)}, 1000); \n    } \n } \n obj.method();",
+        "options": [
+            "value",
+            "undefined",
+            "obj",
+            "Error"
+        ],
+        "answer": "undefined",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "What is the output of the following Javascript code? \n function* myGen(){yield 1; yield 2; yield 3;} \n let gen = myGen(); \n console.log(gen.next().value); \n console.log(gen.next().value); \n console.log(gen.next().value);",
+        "options": [
+            "1 2 3",
+            "3 2 1",
+            "Error",
+            "undefined"
+        ],
+        "answer": "1 2 3",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "What is the output of the following Javascript code? \n let p1 = new Promise((resolve, reject) => {setTimeout(() => {resolve('Promise One')}, 2000)}); \n let p2 = new Promise((resolve, reject) => {resolve('Promise Two')}); \n p1.then(console.log); \n p2.then(console.log);",
+        "options": [
+            "Promise One Promise Two",
+            "Promise Two Promise One",
+            "Error",
+            "undefined"
+        ],
+        "answer": "Promise Two Promise One",
+        "difficulty": "Hard"
+    }    
+                    
+]
