@@ -1,15 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, TouchableOpacity, Image, StyleSheet } from 'react-native';
+import { useDispatch, useSelector } from 'react-redux';
+import { useFiftyLifeline } from '../store/global';
 
-const Lifeline = ({answers, correctAnswer}) => {
-  const [fiftyFifty, setFiftyFifty] = useState(false);
+const Lifeline = ({handleFiftyLifeline}) => {
   const [audiencePoll, setAudiencePoll] = useState(false);
+  const fiftyFifty = useSelector(store => store.global.fiftyLifeline)
+  const dispatch = useDispatch();
+
 
   const handleFiftyFifty = () => {
-    if(!fiftyFifty) {
-        setFiftyFifty(true);
-        // code to remove 2 incorrect answers
-    }
+    handleFiftyLifeline()
+    dispatch(useFiftyLifeline())
   };
 
   const handleAudiencePoll = () => {
@@ -21,7 +23,8 @@ const Lifeline = ({answers, correctAnswer}) => {
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={[styles.lifelineButton, styles.oval]} onPress={handleFiftyFifty} disabled={fiftyFifty}>
+      <TouchableOpacity style={[styles.lifelineButton, styles.oval,!fiftyFifty ? styles.used : null]} onPress={
+        handleFiftyFifty} disabled={!fiftyFifty}>
         <Image source={require('./../assets/fifty-fifty.webp')} style={styles.icon} />
       </TouchableOpacity>
       <TouchableOpacity style={[styles.lifelineButton, styles.oval]} onPress={handleAudiencePoll} disabled={audiencePoll}>
@@ -46,6 +49,9 @@ const styles = StyleSheet.create({
     margin: 10,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  used: {
+    opacity: 0.2
   },
   oval: {
     width: 70,

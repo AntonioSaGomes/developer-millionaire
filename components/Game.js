@@ -4,6 +4,7 @@ import Levels from './Levels';
 import { getQuestions } from '../services/questions.service';
 import Question from './Question';
 import Lifeline from './Lifeline';
+import { randomElements } from '../utils/utils';
 
 const Game = ({gameOver}) => {
   const [currentQuestion, setCurrentQuestion] = useState();
@@ -41,6 +42,20 @@ const Game = ({gameOver}) => {
     getDbQuestions();
   },[])
 
+  const fiftyFiftyLifeline = () => {
+    const wrongAnswers = currentQuestion.options.map((answer, index) => {
+      if (answer != currentQuestion.answer){
+        return index;
+      }
+      return -1; 
+    }).filter(x => x >= 0);
+    const question = Object.assign({}, currentQuestion)
+    randomElements(wrongAnswers,2).forEach((index) => {
+      question.options[index] = "";
+    });
+    setCurrentQuestion(question)
+  }
+
   useEffect(() => {
       if (showLevelPage) {
           setTimeout(() => {
@@ -63,9 +78,7 @@ const Game = ({gameOver}) => {
           correctAnswer={currentQuestion.answer}
           onSubmit={handleSubmit} />
           
-          <Lifeline
-            answers={currentQuestion.answers}
-            correctAnswer={currentQuestion.correctAnswer} />
+          <Lifeline handleFiftyLifeline={fiftyFiftyLifeline}/>
       </>)
       }
     </View>

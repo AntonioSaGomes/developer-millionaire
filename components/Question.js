@@ -1,14 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { useSelector } from 'react-redux';
+import { randomElements } from '../utils/utils';
 import Timer from './Timer';
 
 const Question = ({question, answers, onSubmit, correctAnswer}) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [answerStatus, setAnswerStatus] = useState(null);
   const [isTiming, setIsTiming] = useState(false);
+  const [options, setOptions] = useState(answers);
+
   const stopTimer = isTiming;
   const time = 30;
+  const fiftyLifeline = useSelector(store => store.global.fiftyLifeline);
 
+  
   const handleAnswerSelection = (answer) => {
     setSelectedAnswer(answer);
     setIsTiming(true);
@@ -27,9 +33,10 @@ const Question = ({question, answers, onSubmit, correctAnswer}) => {
       }, 2000);
     }
   }, [isTiming]);
-
+  
   const renderAnswer = (answer, index) => {
-    let backgroundColor = 'white';
+    let backgroundColor = '#2e2eb8';
+    let opacity = 1;
     if (answerStatus === 'correct' && answer === correctAnswer) {
       backgroundColor = 'green';
     } else if (answerStatus === 'incorrect' && answer === selectedAnswer) {
@@ -37,12 +44,15 @@ const Question = ({question, answers, onSubmit, correctAnswer}) => {
     } else if (answer === selectedAnswer) {
       backgroundColor = 'blue';
     }
+    else if (answer === ""){
+      opacity = 0;
+    }
     return (
       <TouchableOpacity
         key={index}
-        style={[styles.answer, { backgroundColor }]}
+        style={[styles.answer, { backgroundColor, opacity }]}
         onPress={() => handleAnswerSelection(answer)}
-        disabled={answerStatus !== null}
+        disabled={answerStatus !== null || answer === ""}
       >
         <Text style={styles.answerText}>{answer}</Text>
       </TouchableOpacity>
@@ -56,7 +66,7 @@ const Question = ({question, answers, onSubmit, correctAnswer}) => {
         <Text style={styles.question}>{question}</Text>
       </View>
       <View style={styles.answersContainer}>
-        {answers.map(renderAnswer)}
+        {options.map(renderAnswer)}
       </View>
     </View>
   );
@@ -80,17 +90,18 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     borderRadius: 4,
     margin: 20,
+    backgroundColor: '#2e2eb8'
   },
   question: {
     fontSize: 18,
     textAlign: 'center',
+    color: 'white',
   },
   answersContainer: {
     marginTop: 20,
     width: '100%',
   },
   answer: {
-    backgroundColor: 'white',
     padding: 20,
     marginVertical: 10,
     alignItems: 'center',
@@ -101,6 +112,7 @@ const styles = StyleSheet.create({
   },
   answerText: {
     fontSize: 16,
+    color: 'white',
   },
 });
 

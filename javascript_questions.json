@@ -130,6 +130,144 @@
         ],
         "answer": "Promise Two Promise One",
         "difficulty": "Hard"
-    }    
-                    
+    },
+    {
+        "question": "What is the output of the following Javascript code? \n let x = 'global'; \n function outer() { \n    let x = 'outer'; \n    function inner() { \n        x = 'inner'; \n        console.log(x); \n    } \n    return inner; \n } \n outer()();",
+        "options": [
+            "global",
+            "outer",
+            "inner",
+            "undefined"
+        ],
+        "answer": "inner",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "What is the output of the following Javascript code? \n let x = { y: 1}; \n let y = { ...x }; \n y.y = 2; \n console.log(x.y);",
+        "options": [
+            "1",
+            "2",
+            "undefined",
+            "null"
+        ],
+        "answer": "1",
+        "difficulty": "Tricky"
+    },
+    {
+        "question": "What is the output of the following Javascript code? \n let x = { y: 1}; \n let y = Object.assign({}, x); \n y.y = 2; \n console.log(x.y);",
+        "options": [
+            "1",
+            "2",
+            "undefined",
+            "null"
+        ],
+        "answer": "1",
+        "difficulty": "Tricky"
+    },
+    {
+        "question": "What is the difference between hoisting a variable and hoisting a function in javascript?",
+        "options": [
+            "There is no difference",
+            "A variable can be accessed before declaration but a function can't",
+            "A function can be accessed before declaration but a variable can't",
+            "Variable hoist the value and function hoist the reference"
+        ],
+        "answer": "A variable can be accessed before declaration but a function can't",
+        "difficulty": "Tricky"
+    },
+    {
+        "question": "What is the difference between call and apply in javascript?",
+        "options": [
+            "Call takes arguments as comma separated values, Apply takes arguments as an array",
+            "Call is slower than Apply",
+            "Apply is slower than Call",
+            "Call is used for constructors, Apply is used for regular functions"
+        ],
+        "answer": "Call takes arguments as comma separated values, Apply takes arguments as an array",
+        "difficulty": "Tricky"
+    },
+    {
+        "question": "What is the output of the following javascript code? \n function outer() { var x = 1; function inner() { var y = 2; console.log(x + y); } return inner; } var func = outer(); func();",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "undefined"
+        ],
+        "answer": "3",
+        "difficulty": "Tricky"
+    },
+    {
+        "question": "What is the difference between a closure and a scope in javascript?",
+        "options": [
+            "Closure is a function and scope is the context where the function is called",
+            "Scope is the function and closure is the context where the function is called",
+            "Closure is the variables that are accessible within a function and scope is the context where the function is called",
+            "Scope is the variables that are accessible within a function and closure is the context where the function is called"
+        ],
+        "answer": "Closure is the variables that are accessible within a function and scope is the context where the function is called",
+        "difficulty": "Tricky"
+    },
+    {
+        "question": "What is the difference between synchronous and asynchronous code execution in javascript?",
+        "options": [
+            "Synchronous code runs faster, Asynchronous code runs slower",
+            "Asynchronous code runs faster, Synchronous code runs slower",
+            "Synchronous code runs in order, Asynchronous code runs out of order",
+            "Asynchronous code runs in order, Synchronous code runs out of order"
+        ],
+        "answer": "Synchronous code runs in order, Asynchronous code runs out of order",
+        "difficulty": "Tricky"
+    },
+    {
+        "question": "What is the difference between the use of the new keyword and the call() and apply() methods in javascript?",
+        "options": [
+            "new creates a new instance of an object, call() and apply() change the context of a function",
+            "call() and apply() creates a new instance of an object, new changes the context of a function",
+            "new creates a new scope, call() and apply() change the context of a function",
+            "call() and apply() creates a new scope, new changes the context of a function"
+        ],
+        "answer": "new creates a new instance of an object, call() and apply() change the context of a function",
+        "difficulty": "Tricky"
+    },
+    {
+        "question": "What is the difference between a generator function and a normal function in javascript?",
+        "options": [
+            "Generator functions can be paused and resumed, normal functions can't",
+            "Normal functions can be paused and resumed, generator functions can't",
+            "Generator functions can return multiple values, normal functions can't",
+            "Normal functions can return multiple values, generator functions can't"
+        ],
+        "answer": "Generator functions can be paused and resumed, normal functions can't",
+        "difficulty": "Tricky"
+    },
+    {
+        "question": "What is the difference between prototypical inheritance and classical inheritance in javascript?",
+        "options": [
+            "Prototypical inheritance uses prototypes and classical inheritance uses classes",
+            "Classical inheritance uses prototypes and prototypical inheritance uses classes",
+            "Prototypical inheritance uses a single base class and classical inheritance uses multiple base classes",
+            "Classical inheritance uses a single base class and prototypical inheritance uses multiple base classes"
+        ],
+        "answer": "Prototypical inheritance uses prototypes and classical inheritance uses classes",
+        "difficulty": "Tricky"
+    }
 ]
+/*     Create 4 more hard tricky questions using these concepts.
+No code questions.
+
+this
+Asynchronous JavaScript (promises, callbacks, async/await)
+Closures
+The event loop
+Recursion
+Scope
+Hoisting
+Prototypical inheritance
+bind(), call(), apply()
+reduce()
+Generators
+fetch()
+
+
+     */

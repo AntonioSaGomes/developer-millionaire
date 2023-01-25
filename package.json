@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@expo/webpack-config": "^0.17.2",
+    "@reduxjs/toolkit": "^1.9.1",
     "axios": "^1.2.3",
     "babel-plugin-react-native-classname-to-style": "^1.2.2",
     "babel-plugin-react-native-platform-specific-extensions": "^1.1.1",
@@ -25,7 +26,9 @@
     "react-native-css-transformer": "^1.2.4",
     "react-native-reanimated": "~2.12.0",
     "react-native-svg": "13.4.0",
-    "react-native-web": "~0.18.9"
+    "react-native-web": "~0.18.9",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"

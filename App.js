@@ -1,12 +1,10 @@
-import { useState } from 'react';
-import { StyleSheet, View } from 'react-native';
-import Game from './components/Game';
-import HighScores from './components/HighScores';
-import Home from './components/Home';
+
   // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getFirestore } from 'firebase/firestore';
+import store  from './store/index';
+import { Provider } from 'react-redux';
+import MainPage from './MainPage';
+
 
 export default function App() {
 
@@ -28,35 +26,12 @@ const firebaseConfig = {
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
-  const firestore = getFirestore(app);
   
-  const [page, setPage] = useState('home');
-
-  const gameOver = () => {
-    setPage('home')
-  }
-  const renderPage = () =>{
-    console.log('page', page);
-    if (page === 'game') return <Game gameOver={gameOver} />
-    else if (page === 'highscores') return <HighScores />
-    else {
-      console.log('render home');
-      return <Home newGame={() => setPage('game')} highscores={() => setPage('highscores')}/>
-    }
-  }
-
   return (
-    <View style={styles.container}>
-      {renderPage()}
-    </View>
+    <Provider store={store}>
+      <MainPage />
+    </Provider>
+
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

@@ -17,10 +17,13 @@ export default function Home({newGame, highscores}) {
         </Text>
         <View style={styles.optionsContainer}>
           <TouchableOpacity style={styles.option} onPress={() => handleNewGame()}>
-              <Text style={styles.answerText}>New Game</Text>
+              <Text style={styles.optionText}>New Game</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.option}  onPress={() => handleHighScores()}>
-              <Text style={styles.answerText}>Highscores</Text>
+              <Text style={styles.optionText}>Highscores</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.option}  onPress={() => handleSettings()}>
+              <Text style={styles.optionText}>Settings</Text>
           </TouchableOpacity>
         </View>
     </View>
@@ -29,15 +32,19 @@ export default function Home({newGame, highscores}) {
 
 
 const styles = StyleSheet.create({
-
   homeContainer:{
     flexDirection: 'column',
-    justifyContent: 'center',
     alignItems: 'center',
+    justifyContent: 'space-around',
+    height: '90%',
+    width: '100%',
+    paddingHorizontal: 10,
+    marginTop: 20
   },
   homeText:{
-    fontSize: '20px',
-    color: 'blue'
+    fontSize: 30,
+    flexWrap: 'wrap',
+    color: 'white'
   },
   optionsContainer: {
     flexDirection: 'column',
@@ -47,12 +54,17 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   option: {
-    backgroundColor: 'white',
+    backgroundColor: '#2e2eb8',
     padding: 20,
     marginVertical: 10,
     alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 2,
+    width: '100%',
     borderColor: 'black',
   },
+  optionText:{
+    fontSize: 20,
+    color: 'white',
+  }
 });
