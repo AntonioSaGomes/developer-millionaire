@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { PROFICIENCY_LEVELS } from '../constants';
 
 const Levels = ({ currentLevel, totalLevels }) => {
 
@@ -17,7 +18,7 @@ const Levels = ({ currentLevel, totalLevels }) => {
                 const level = i + 1;
                 return (
                     <View key={level} style={[styles.levelContainer, styles[getLevelStyle(level)]]}>
-                        <Text style={[styles.levelText, styles[getLevelStyle(level)]]}>{level}</Text>
+                        <Text style={[styles.levelText, styles[getLevelStyle(level)]]}>{PROFICIENCY_LEVELS[level-1]}</Text>
                     </View>
                 );
             })}
@@ -45,6 +46,7 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
         margin: 10,
+        color: 'white',
     },
     levelContainer: {
         width: '60%',

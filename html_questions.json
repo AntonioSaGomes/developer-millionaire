@@ -1,0 +1,210 @@
+[
+    {
+        "id": "37",
+        "language": "HTML",
+        "question": "What is the difference between <div> and <span>?",
+        "options": [
+            "<div> is a block level element and <span> is inline",
+            "<div> is inline and <span> is block level",
+            "<div> is used for structure and <span> is used for styling",
+            "They are the same"
+        ],
+        "answer": "<div> is a block level element and <span> is inline",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "38",
+        "language": "HTML",
+        "question": "What is the difference between <p> and <br>?",
+        "options": [
+            "<p> creates a new paragraph and <br> creates a line break",
+            "<p> creates a line break and <br> creates a new paragraph",
+            "<p> is used for text and <br> is used for images",
+            "They are the same"
+        ],
+        "answer": "<p> creates a new paragraph and <br> creates a line break",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "39",
+        "language": "HTML",
+        "question": "What is the difference between 'id' and 'class' attributes?",
+        "options": [
+            "id is unique and class is not",
+            "class is unique and id is not",
+            "id is used for styling and class is used for structure",
+            "They are the same"
+        ],
+        "answer": "id is unique and class is not",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "40",
+        "language": "HTML",
+        "question": "What is the difference between <ol> and <ul>?",
+        "options": [
+            "<ol> creates a numbered list and <ul> creates a bullet point list",
+            "<ol> creates a bullet point list and <ul> creates a numbered list",
+            "<ol> is used for images and <ul> is used for text",
+            "They are the same"
+        ],
+        "answer": "<ol> creates a numbered list and <ul> creates a bullet point list",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "41",
+        "language": "HTML",
+        "question": "What is the difference between <em> and <strong>?",
+        "options": [
+            "<em> is used to indicate emphasis and <strong> is used to indicate importance",
+            "<em> is used to indicate importance and <strong> is used to indicate emphasis",
+            "<em> is used for italic and <strong> is used for bold",
+            "They are the same"
+        ],
+        "answer": "<em> is used to indicate emphasis and <strong> is used to indicate importance",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "42",
+        "language": "HTML",
+        "question": "What is the difference between <figure> and <figcaption>?",
+        "options": [
+            "<figure> is used to group media elements and <figcaption> is used to provide a caption for the media",
+            "<figure> is used to provide a caption for the media and <figcaption> is used to group media elements",
+            "<figure> is used for images and <figcaption> is used for videos",
+            "They are the same"
+        ],
+        "answer": "<figure> is used to group media elements and <figcaption> is used to provide a caption for the media",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "43",
+        "language": "HTML",
+        "question": "What is the difference between <q> and <blockquote>?",
+        "options": [
+            "<q> is used for short quotes and <blockquote> is used for long quotes",
+            "<q> is used for long quotes and <blockquote> is used for short quotes",
+            "<q> is used for styling and <blockquote> is used for semantics",
+            "They are the same"
+        ],
+        "answer": "<q> is used for short quotes and <blockquote> is used for long quotes",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "44",
+        "language": "HTML",
+        "question": "What is the difference between <mark> and <ins>?",
+        "options": [
+            "<mark> is used to highlight text and <ins> is used to indicate text that has been added to a document",
+            "<ins> is used to highlight text and <mark> is used to indicate text that has been added to a document",
+            "<mark> is used for bold text and <ins> is used for underlined text",
+            "They are the same"
+        ],
+        "answer": "<mark> is used to highlight text and <ins> is used to indicate text that has been added to a document",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "45",
+        "language": "HTML",
+        "question": "What is the difference between <time> and <datetime>?",
+        "options": [
+            "<time> is used for displaying time and <datetime> is used for providing machine-readable date and time information",
+            "<datetime> is used for displaying time and <time> is used for providing machine-readable date and time information",
+            "<time> is used for local time and <datetime> is used for UTC time",
+            "They are the same"
+        ],
+        "answer": "<time> is used for displaying time and <datetime> is used for providing machine-readable date and time information",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "46",
+        "language": "HTML",
+        "question": "What is the difference between <meter> and <progress>?",
+        "options": [
+            "<meter> is used for displaying a scalar value within a known range and <progress> is used for displaying the completion progress of a task",
+            "<progress> is used for displaying a scalar value within a known range and <meter> is used for displaying the completion progress of a task",
+            "<meter> is used for showing data in a graph and <progress> is used for showing data in a bar chart",
+            "They are the same"
+        ],
+        "answer": "<meter> is used for displaying a scalar value within a known range and <progress> is used for displaying the completion progress of a task",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "47",
+        "language": "HTML",
+        "question": "What is the difference between <header> and <head>?",
+        "options": [
+            "<header> is used for containing introductory content or a set of navigational links and <head> is used to provide information about the document, such as the title and meta data",
+            "<head> is used for containing introductory content or a set of navigational links and <header> is used to provide information about the document, such as the title and meta data",
+            "<header> is used for the top part of a webpage and <head> is used for the bottom part of a webpage",
+            "They are the same"
+        ],
+        "answer": "<header> is used for containing introductory content or a set of navigational links and <head> is used to provide information about the document, such as the title and meta data",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "48",
+        "language": "HTML",
+        "question": "What is the difference between <dl> and <ul>?",
+        "options": [
+            "<dl> is used for creating definition lists and <ul> is used for creating unordered lists",
+            "<ul> is used for creating definition lists and <dl> is used for creating unordered lists",
+            "<dl> is used for creating lists with terms and descriptions and <ul> is used for creating simple bullet point lists",
+            "They are the same"
+        ],
+        "answer": "<dl> is used for creating definition lists and <ul> is used for creating unordered lists",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "49",
+        "language": "HTML",
+        "question": "What is the difference between <label> and <legend>?",
+        "options": [
+            "<label> is used to provide a text description for a form control and <legend> is used to provide a caption for a fieldset element",
+            "<legend> is used to provide a text description for a form control and <label> is used to provide a caption for a fieldset element",
+            "<label> is used for input fields and <legend> is used for textarea fields",
+            "They are the same"
+        ],
+        "answer": "<label> is used to provide a text description for a form control and <legend> is used to provide a caption for a fieldset element",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "50",
+        "language": "HTML",
+        "question": "What is the difference between <b> and <i>?",
+        "options": [
+            "<b> is used to make text bold and <i> is used to make text italic",
+            "<i> is used to make text bold and <b> is used to make text italic",
+            "<b> is used for bold text and <i> is used for underlined text",
+            "They are the same"
+        ],
+        "answer": "<b> is used to make text bold and <i> is used to make text italic",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "51",
+        "language": "HTML",
+        "question": "What is the difference between <section> and <article>?",
+        "options": [
+            "<section> is used for grouping related content and <article> is used for self-contained content that could be independently distributable or syndicatable",
+            "<article> is used for grouping related content and <section> is used for self-contained content that could be independently distributable or syndicatable",
+            "<section> is used for headers and <article> is used for footers",
+            "They are the same"
+        ],
+        "answer": "<section> is used for grouping related content and <article> is used for self-contained content that could be independently distributable or syndicatable",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "52",
+        "language": "HTML",
+        "question": "What is the difference between <aside> and <nav>?",
+        "options": [
+            "<aside> is used for content that is related to the main content, but not essential for understanding it, and <nav> is used for navigation links",
+            "<nav> is used for content that is related to the main content, but not essential for understanding it, and <aside> is used for navigation links",
+            "<aside> is used for sidebar content and <nav> is used for main content",
+            "They are the same"
+        ],
+        "answer": "<aside> is used for content that is related to the main content, but not essential for understanding it, and <nav> is used for navigation links",
+        "difficulty": "Hard"
+    }
+]

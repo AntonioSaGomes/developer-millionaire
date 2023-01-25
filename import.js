@@ -1,5 +1,5 @@
 //import { doc, setDoc } from "firebase/firestore"; 
-const customData = require('./python_questions.json');
+const customData = require('./html_questions.json');
 const { initializeApp } = require("firebase/app");
 const { getFirestore, collection, addDoc  } = require("firebase/firestore");
 
@@ -23,12 +23,7 @@ const firestore = getFirestore(app);
 function importData() {
   customData.forEach(
     async (data) => {
-      await addDoc(collection(firestore, "Questions"), data/*  {
-        question: data.question,
-        answer: data.answer,
-        difficulty: data.difficulty,
-        options: data.options
-      } */)
+      await addDoc(collection(firestore, "Questions"), data)
     }
   )
 }

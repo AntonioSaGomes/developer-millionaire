@@ -2,7 +2,7 @@ import { firestore } from "../firebase";
 import { query, getDocs,collection, limit, orderBy, where, } from "firebase/firestore";  
 import { randomArray } from "../utils/utils";
 
-const N_QUESTIONS = 24;
+const N_QUESTIONS = 50;
 
 export const getQuestions = () => {
     const ids = randomArray(N_QUESTIONS);

@@ -5,6 +5,7 @@ import { getQuestions } from '../services/questions.service';
 import Question from './Question';
 import Lifeline from './Lifeline';
 import { randomElements } from '../utils/utils';
+import { PROFICIENCY_LEVELS } from '../constants';
 
 const Game = ({gameOver}) => {
   const [currentQuestion, setCurrentQuestion] = useState();
@@ -13,6 +14,7 @@ const Game = ({gameOver}) => {
   const [questions, setQuestions] = useState([]);
   const currentQuestionIndex = currentLevel;
   const totalLevels = 10;
+  const proficiencyLevel = PROFICIENCY_LEVELS[currentLevel-1]
 
   const handleSubmit = (selectedAnswer) => {
         setTimeout(() =>{
@@ -76,7 +78,8 @@ const Game = ({gameOver}) => {
           question={currentQuestion.question}
           answers={currentQuestion.options}
           correctAnswer={currentQuestion.answer}
-          onSubmit={handleSubmit} />
+          onSubmit={handleSubmit}
+          level={proficiencyLevel} />
           
           <Lifeline handleFiftyLifeline={fiftyFiftyLifeline}/>
       </>)

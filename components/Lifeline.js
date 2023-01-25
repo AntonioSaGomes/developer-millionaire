@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { useFiftyLifeline } from '../store/global';
+import AudiencePoll from './AudiencePoll';
 
 const Lifeline = ({handleFiftyLifeline}) => {
   const [audiencePoll, setAudiencePoll] = useState(false);
@@ -17,7 +18,6 @@ const Lifeline = ({handleFiftyLifeline}) => {
   const handleAudiencePoll = () => {
     if(!audiencePoll) {
         setAudiencePoll(true);
-        // code to show the audience poll results
     }
   };
 
@@ -30,6 +30,7 @@ const Lifeline = ({handleFiftyLifeline}) => {
       <TouchableOpacity style={[styles.lifelineButton, styles.oval]} onPress={handleAudiencePoll} disabled={audiencePoll}>
         <Image source={require('./../assets/audience-poll.webp')} style={styles.icon} />
       </TouchableOpacity>
+      { audiencePoll && <AudiencePoll/> }
     </View>
   );
 };

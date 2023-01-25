@@ -1,0 +1,158 @@
+[
+    {
+        "id": "25",
+        "language": "CSS",
+        "question": "How do you use the CSS '@keyframes' animation to make an element change color from red to blue when hovered over?",
+        "options": [
+            "Use the 'transition' property with the 'color' property and the values 'red' and 'blue'.",
+            "Use the 'animation' property with the 'color' property and the values 'red' and 'blue' in the '@keyframes' animation.",
+            "Use the 'transform' property with the 'color' property and the values 'red' and 'blue' in the '@keyframes' animation.",
+            "Use the 'background-color' property with the 'color' property and the values 'red' and 'blue' in the '@keyframes' animation."
+        ],
+        "answer": "Use the 'animation' property with the 'color' property and the values 'red' and 'blue' in the '@keyframes' animation.",
+        "difficulty": "Medium"
+    },
+    {
+        "id": "26",
+        "language": "CSS",
+        "question": "Difference between 'display:block' and 'display:inline-block'?",
+        "options": [
+            "Width and new line",
+            "Width and new line of screen",
+            "Width and new line of parent container",
+            "Height and new line"
+        ],
+        "answer": "Width and new line of parent container",
+        "difficulty": "Medium"
+    },
+    {
+        "id": "27",
+        "language": "CSS",
+        "question": "How to align center an element vertically ?",
+        "options": [
+            "Use 'align-content' property",
+            "Use 'align-items' property",
+            "Use 'align-self' property",
+            "Use 'justify-content' property"
+        ],
+        "answer": "Use 'align-items' property",
+        "difficulty": "Easy"
+    },
+    {
+        "id": "28",
+        "language": "CSS",
+        "question": "How to make an element responsive with CSS?",
+        "options": [
+            "Use media query",
+            "Use @keyframes",
+            "Use grid layout",
+            "Use position property"
+        ],
+        "answer": "Use media query",
+        "difficulty": "Easy"
+    },
+    {
+        "id": "29",
+        "language": "CSS",
+        "question": "What is the use of 'z-index' property?",
+        "options": [
+            "To set the stack order of elements",
+            "To set the text color",
+            "To set the background color",
+            "To set the font size"
+        ],
+        "answer": "To set the stack order of elements",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "30",
+        "language": "CSS",
+        "question": "What is the difference between 'visibility:hidden' and 'display:none'?",
+        "options": [
+            "Visibility:hidden hides the element but still takes up space, display:none removes the element completely",
+            "Visibility:hidden removes the element completely, display:none hides the element but still takes up space",
+            "They are the same",
+            "None of the above"
+        ],
+        "answer": "Visibility:hidden hides the element but still takes up space, display:none removes the element completely",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "31",
+        "language": "CSS",
+        "question": "How to set background color of an element?",
+        "options": [
+            "Use 'background' property",
+            "Use 'bgcolor' property",
+            "Use 'color' property",
+            "Use 'background-color' property"
+        ],
+        "answer": "Use 'background-color' property",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "32",
+        "language": "CSS",
+        "question": "What is the use of '::before' and '::after' pseudo-elements?",
+        "options": [
+            "To add content before and after an element",
+            "To set the text color",
+            "To set the background color",
+            "To set the font size"
+        ],
+        "answer": "To add content before and after an element",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "33",
+        "language": "CSS",
+        "question": "What is the order of precedence of CSS selectors and how it affects specificity?",
+        "options": [
+            "ID > Class > Element",
+            "Element > Class > ID",
+            "Class > ID > Element",
+            "ID > Element > Class"
+        ],
+        "answer": "ID > Class > Element",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "34",
+        "language": "CSS",
+        "question": "Explain how CSS inheritance works and give an example",
+        "options": [
+            "Inheritance is the mechanism by which properties are passed from parent elements to child elements.",
+            "Inheritance is the mechanism by which properties are passed from child elements to parent elements.",
+            "Inheritance is the mechanism by which properties are passed from siblings elements to child elements.",
+            "Inheritance is the mechanism by which properties are passed from parent elements to parent elements."
+        ],
+        "answer": "Inheritance is the mechanism by which properties are passed from parent elements to child elements.",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "35",
+        "language": "CSS",
+        "question": "What is the difference between 'min-width' and 'max-width' media queries?",
+        "options": [
+            "min-width applies styles when the viewport is wider than the value, max-width applies styles when the viewport is narrower than the value",
+            "min-width applies styles when the viewport is narrower than the value, max-width applies styles when the viewport is wider than the value",
+            "min-width and max-width are the same",
+            "None of the above"
+        ],
+        "answer": "min-width applies styles when the viewport is wider than the value, max-width applies styles when the viewport is narrower than the value",
+        "difficulty": "Hard"
+    },
+    {
+        "id": "36",
+        "language": "CSS",
+        "question": "How can you use the 'clamp()' function to limit the size of an element?",
+        "options": [
+            "The clamp() function can be used to limit the size of an element by setting a minimum and maximum value for its width and height.",
+            "The clamp() function can be used to limit the size of an element by setting a minimum and maximum value for its font-size and line-height.",
+            "The clamp() function can be used to limit the size of an element by setting a minimum and maximum value for its padding and margin.",
+            "The clamp() function can be used to limit the size of an element by setting a minimum and maximum value for its border-width."
+        ],
+        "answer": "The clamp() function can be used to limit the size of an element by setting a minimum and maximum value for its width and height.",
+        "difficulty": "Hard"
+    }
+]

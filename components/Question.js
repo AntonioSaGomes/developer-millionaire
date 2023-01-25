@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { useSelector } from 'react-redux';
-import { randomElements } from '../utils/utils';
 import Timer from './Timer';
 
-const Question = ({question, answers, onSubmit, correctAnswer}) => {
+const Question = ({question, answers, onSubmit, correctAnswer, level}) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [answerStatus, setAnswerStatus] = useState(null);
   const [isTiming, setIsTiming] = useState(false);
@@ -12,7 +11,6 @@ const Question = ({question, answers, onSubmit, correctAnswer}) => {
 
   const stopTimer = isTiming;
   const time = 30;
-  const fiftyLifeline = useSelector(store => store.global.fiftyLifeline);
 
   
   const handleAnswerSelection = (answer) => {
@@ -63,6 +61,7 @@ const Question = ({question, answers, onSubmit, correctAnswer}) => {
     <View style={styles.container}>
       <Timer time={time} stop={stopTimer} />
       <View style={styles.questionContainer}>
+        <Text style={styles.levelText}>{level}</Text>
         <Text style={styles.question}>{question}</Text>
       </View>
       <View style={styles.answersContainer}>
@@ -90,7 +89,15 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     borderRadius: 4,
     margin: 20,
-    backgroundColor: '#2e2eb8'
+    backgroundColor: '#2e2eb8',
+    position:"relative",
+  },
+  levelText:{
+    fontSize: 22,
+    color:'white',
+    fontWeight: 'bold',
+    top: -15,
+    position: "absolute"
   },
   question: {
     fontSize: 18,
