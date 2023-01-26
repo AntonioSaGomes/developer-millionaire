@@ -4,6 +4,7 @@ import { initializeApp } from "firebase/app";
 import store  from './store/index';
 import { Provider } from 'react-redux';
 import MainPage from './MainPage';
+import { Logs } from 'expo'
 
 
 export default function App() {
@@ -26,7 +27,8 @@ const firebaseConfig = {
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
-  
+
+  Logs.enableExpoCliLogging()
   return (
     <Provider store={store}>
       <MainPage />

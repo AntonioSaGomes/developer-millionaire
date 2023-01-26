@@ -1,7 +1,28 @@
-import React from 'react';
-import { Text, TouchableOpacity, View, StyleSheet } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { Text, TouchableOpacity, View, StyleSheet, Image } from 'react-native';
+import Logo from './../assets/logo.svg';
+import { Audio } from 'expo-av';
 
 export default function Home({newGame, highscores}) {
+
+  useEffect(() => {
+    async function playSound(){
+      console.log('playing sound');
+      try{
+        const { sound } = await Audio.Sound.createAsync(require('./../assets/soundtrack.mp3'));
+        console.log('sound', sound);
+        await sound.playAsync();
+
+      }catch(e){
+        console.log(e);
+      }
+
+    }
+
+    playSound();
+  }, []);
+
+
   const handleNewGame = () => {
     newGame();
   }
@@ -15,6 +36,7 @@ export default function Home({newGame, highscores}) {
         <Text style={styles.homeText}>
             Who wants to be a Developer?
         </Text>
+        <Logo width={200} height={200} />
         <View style={styles.optionsContainer}>
           <TouchableOpacity style={styles.option} onPress={() => handleNewGame()}>
               <Text style={styles.optionText}>New Game</Text>
@@ -46,6 +68,11 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     color: 'white'
   },
+  icon: {
+    width: 80,
+    height: 80,
+    backgroundColor: 'white',
+  },
   optionsContainer: {
     flexDirection: 'column',
     justifyContent: 'center',
@@ -61,7 +88,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderWidth: 2,
     width: '100%',
-    borderColor: 'black',
+    borderColor: 'white',
   },
   optionText:{
     fontSize: 20,

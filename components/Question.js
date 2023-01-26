@@ -85,8 +85,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
-    borderWidth: 2,
-    borderColor: 'black',
+    borderWidth: 3,
+    borderColor: 'white',
     borderRadius: 4,
     margin: 20,
     backgroundColor: '#2e2eb8',
@@ -97,7 +97,10 @@ const styles = StyleSheet.create({
     color:'white',
     fontWeight: 'bold',
     top: -15,
-    position: "absolute"
+    position: "absolute",
+    backgroundColor: '#2e2eb8',
+    paddingHorizontal: 10,
+    zIndex: 10,
   },
   question: {
     fontSize: 18,
@@ -113,8 +116,8 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     alignItems: 'center',
     justifyContent: 'center',
-    borderWidth: 2,
-    borderColor: 'black',
+    borderWidth: 3,
+    borderColor: 'white',
     borderRadius: 20,
   },
   answerText: {
